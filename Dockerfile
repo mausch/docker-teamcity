@@ -37,11 +37,8 @@ RUN curl -LO http://download.jetbrains.com/teamcity/TeamCity-$TEAMCITY_VERSION.w
  && rm -f  webapps/teamcity/WEB-INF/plugins/clearcase.zip                  \
  && rm -f  webapps/teamcity/WEB-INF/plugins/mercurial.zip                  \
  && rm -f  webapps/teamcity/WEB-INF/plugins/eclipse-plugin-distributor.zip \
- && rm -f  webapps/teamcity/WEB-INF/plugins/vs-addin-distributor.zip       \
- && rm -f  webapps/teamcity/WEB-INF/plugins/win32-distributor.zip          \
  && rm -Rf webapps/teamcity/WEB-INF/plugins/svn                            \
  && rm -Rf webapps/teamcity/WEB-INF/plugins/tfs                            \
  && rm -Rf webapps/teamcity/WEB-INF/plugins/vss                            \
- && rm -Rf webapps/teamcity/WEB-INF/plugins/dot*                           \
 
  && echo '<meta name="mobile-web-app-capable" content="yes">' >> webapps/teamcity/WEB-INF/tags/pageMeta.tag
